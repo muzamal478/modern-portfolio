@@ -2,7 +2,7 @@
 
 A responsive personal portfolio website built with HTML, CSS, JavaScript, and Bootstrap 5.
 
-![Portfolio Preview](images/portfolio-preview.png)
+![Portfolio Preview](images/portfolio-preview.jpeg)
 
 ## Features
 
