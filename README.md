@@ -40,7 +40,7 @@ A responsive personal portfolio website built with HTML, CSS, JavaScript, and Bo
 
 1. Clone this repository:
    ```
-   git clone https://github.com/your-username/modern-portfolio.git
+   git clone https://github.com/muzamal478/modern-portfolio
    ```
 
 2. Open the project in your code editor
