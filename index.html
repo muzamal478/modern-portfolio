@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
+                    <h1 class="display-4 fw-bold">Hi, I'm <span class="highlight">John Doe</span></h1>
+                    <h2 class="typewriter mb-4">I'm a <span id="typed-text"></span></h2>
+                    <p class="lead">Welcome to my portfolio website. I create amazing digital experiences.</p>
+                    <div class="hero-btns">
+                        <a href="#contact" class="btn btn-primary me-3">Contact Me</a>
+                        <a href="#portfolio" class="btn btn-outline-light">View My Work</a>
+                    </div>
+                    <div class="social-icons mt-4">
+                        <a href="#" class="me-3"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-github"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="images/profile.jpg" alt="Profile" class="img-fluid hero-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="section-title text-center mb-5" data-aos="fade-up">
+                <h2>About Me</h2>
+                <div class="line"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-5" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="about-img">
+                        <img src="images/about.jpg" alt="About Me" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-7" data-aos="fade-left" data-aos-duration="1000">
+                    <h3>Who am I?</h3>
+                    <p>I am a passionate web developer with a focus on creating beautiful, functional websites. With 5+ years of experience in the industry, I've worked on a variety of projects from small business websites to large e-commerce platforms.</p>
+                    
+                    <h3 class="mt-4">My Experience</h3>
+                    <p>I specialize in front-end development, creating responsive and user-friendly interfaces using the latest technologies. I'm also skilled in back-end development and enjoy building full-stack applications.</p>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <div class="about-info">
+                                <p><strong>Name:</strong> John Doe</p>
+                                <p><strong>Email:</strong> contact@johndoe.com</p>
+                                <p><strong>Phone:</strong> +1 234 567 890</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="about-info">
+                                <p><strong>Location:</strong> New York, USA</p>
+                                <p><strong>Freelance:</strong> Available</p>
+                                <p><strong>Languages:</strong> English, Spanish</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="resume.pdf" class="btn btn-primary mt-4" download>Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-title text-center mb-5" data-aos="fade-up">
+                <h2>My Skills</h2>
+                <div class="line"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
+                    <h3 class="mb-4">Technical Skills</h3>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <h5>HTML/CSS</h5>
+                            <p>95%</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <h5>JavaScript</h5>
+                            <p>85%</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <h5>React.js</h5>
+                            <p>80%</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <h5>Node.js</h5>
+                            <p>75%</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
+                    <h3 class="mb-4">Professional Skills</h3>
+                    
+                    <div class="row">
+                        <div class="col-6 col-md-4 text-center mb-4">
+                            <div class="skill-circle">
+                                <div class="circle" data-value="0.9">
+                                    <span>90%</span>
+                                </div>
+                                <h5 class="mt-3">Communication</h5>
+                            </div>
+                        </div>
+                        
+                        <div class="col-6 col-md-4 text-center mb-4">
+                            <div class="skill-circle">
+                                <div class="circle" data-value="0.85">
+                                    <span>85%</span>
+                                </div>
+                                <h5 class="mt-3">Teamwork</h5>
+                            </div>
+                        </div>
+                        
+                        <div class="col-6 col-md-4 text-center mb-4">
+                            <div class="skill-circle">
+                                <div class="circle" data-value="0.95">
+                                    <span>95%</span>
+                                </div>
+                                <h5 class="mt-3">Creativity</h5>
+                            </div>
+                        </div>
+                        
+                        <div class="col-6 col-md-4 text-center mb-4">
+                            <div class="skill-circle">
+                                <div class="circle" data-value="0.8">
+                                    <span>80%</span>
+                                </div>
+                                <h5 class="mt-3">Project Management</h5>
+                            </div>
+                        </div>
+                        
+                        <div class="col-6 col-md-4 text-center mb-4">
+                            <div class="skill-circle">
+                                <div class="circle" data-value="0.88">
+                                    <span>88%</span>
+                                </div>
+                                <h5 class="mt-3">Problem Solving</h5>
+                            </div>
+                        </div>
+                        
+                        <div class="col-6 col-md-4 text-center mb-4">
+                            <div class="skill-circle">
+                                <div class="circle" data-value="0.78">
+                                    <span>78%</span>
+                                </div>
+                                <h5 class="mt-3">Adaptability</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <div class="section-title text-center mb-5" data-aos="fade-up">
+                <h2>My Portfolio</h2>
+                <div class="line"></div>
+            </div>
+            
+            <div class="portfolio-filter text-center mb-4">
+                <button class="btn active" data-filter="*">All</button>
+                <button class="btn" data-filter=".web">Web Design</button>
+                <button class="btn" data-filter=".app">App Development</button>
+                <button class="btn" data-filter=".ui">UI/UX Design</button>
+            </div>
+            
+            <div class="row portfolio-container">
+                <div class="col-md-4 col-sm-6 portfolio-item web" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="portfolio-wrap">
+                        <img src="images/portfolio/project1.jpg" class="img-fluid" alt="Project 1">
+                        <div class="portfolio-info">
+                            <h4>E-commerce Website</h4>
+                            <p>Web Design</p>
+                            <div class="portfolio-links">
+                                <a href="images/portfolio/project1.jpg" class="portfolio-lightbox" title="E-commerce Website"><i class="fas fa-plus"></i></a>
+                                <a href="#" title="More Details"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 portfolio-item app" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="portfolio-wrap">
+                        <img src="images/portfolio/project2.jpg" class="img-fluid" alt="Project 2">
+                        <div class="portfolio-info">
+                            <h4>Mobile App</h4>
+                            <p>App Development</p>
+                            <div class="portfolio-links">
+                                <a href="images/portfolio/project2.jpg" class="portfolio-lightbox" title="Mobile App"><i class="fas fa-plus"></i></a>
+                                <a href="#" title="More Details"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 portfolio-item ui" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="portfolio-wrap">
+                        <img src="images/portfolio/project3.jpg" class="img-fluid" alt="Project 3">
+                        <div class="portfolio-info">
+                            <h4>Dashboard Design</h4>
+                            <p>UI/UX Design</p>
+                            <div class="portfolio-links">
+                                <a href="images/portfolio/project3.jpg" class="portfolio-lightbox" title="Dashboard Design"><i class="fas fa-plus"></i></a>
+                                <a href="#" title="More Details"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 portfolio-item web" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="portfolio-wrap">
+                        <img src="images/portfolio/project4.jpg" class="img-fluid" alt="Project 4">
+                        <div class="portfolio-info">
+                            <h4>Corporate Website</h4>
+                            <p>Web Design</p>
+                            <div class="portfolio-links">
+                                <a href="images/portfolio/project4.jpg" class="portfolio-lightbox" title="Corporate Website"><i class="fas fa-plus"></i></a>
+                                <a href="#" title="More Details"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 portfolio-item app" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="portfolio-wrap">
+                        <img src="images/portfolio/project5.jpg" class="img-fluid" alt="Project 5">
+                        <div class="portfolio-info">
+                            <h4>Fitness App</h4>
+                            <p>App Development</p>
+                            <div class="portfolio-links">
+                                <a href="images/portfolio/project5.jpg" class="portfolio-lightbox" title="Fitness App"><i class="fas fa-plus"></i></a>
+                                <a href="#" title="More Details"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 portfolio-item ui" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="portfolio-wrap">
+                        <img src="images/portfolio/project6.jpg" class="img-fluid" alt="Project 6">
+                        <div class="portfolio-info">
+                            <h4>Travel App UI</h4>
+                            <p>UI/UX Design</p>
+                            <div class="portfolio-links">
+                                <a href="images/portfolio/project6.jpg" class="portfolio-lightbox" title="Travel App UI"><i class="fas fa-plus"></i></a>
+                                <a href="#" title="More Details"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-title text-center mb-5" data-aos="fade-up">
+                <h2>My Services</h2>
+                <div class="line"></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>I create responsive, high-performance websites using the latest technologies and best practices.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>App Development</h3>
+                        <p>I develop cross-platform mobile applications that provide a seamless user experience.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>UI/UX Design</h3>
+                        <p>I create intuitive user interfaces and engaging user experiences that keep users coming back.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>SEO Optimization</h3>
+                        <p>I optimize websites to rank higher in search engine results and drive more organic traffic.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>E-commerce Solutions</h3>
+                        <p>I build online stores that provide a seamless shopping experience and drive conversions.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Web Hosting</h3>
+                        <p>I provide reliable hosting solutions that ensure your website is always fast and available.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <div class="section-title text-center mb-5" data-aos="fade-up">
+                <h2>Client Testimonials</h2>
+                <div class="line"></div>
+            </div>
+            
+            <div class="row testimonial-slider">
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <p>"John created an amazing website for our business. His attention to detail and creative solutions exceeded our expectations."</p>
+                            <div class="testimonial-info">
+                                <img src="images/testimonials/client4.jpg" alt="Client 1">
+                                <div>
+                                    <h5>Sarah Johnson</h5>
+                                    <span>CEO, TechStart</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <p>"Working with John was a pleasure. He understood our needs and delivered a product that perfectly represents our brand."</p>
+                            <div class="testimonial-info">
+                                <img src="images/testimonials/client2.jpg" alt="Client 2">
+                                <div>
+                                    <h5>Michael Brown</h5>
+                                    <span>Marketing Director, Brand Co.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <p>"John's expertise in web development helped us launch our online store quickly and efficiently. Highly recommended!"</p>
+                            <div class="testimonial-info">
+                                <img src="images/testimonials/client3.jpg" alt="Client 3">
+                                <div>
+                                    <h5>Emily Wilson</h5>
+                                    <span>Owner, Fashion Boutique</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-title text-center mb-5" data-aos="fade-up">
+                <h2>Contact Me</h2>
+                <div class="line"></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-5" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <p>Feel free to reach out to me for any inquiries or project discussions. I'm always open to new opportunities.</p>
+                        
+                        <div class="contact-item">
+                            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="text">
+                                <h5>Location</h5>
+                                <p>123 Broadway, New York, NY 10001</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="icon"><i class="fas fa-envelope"></i></div>
+                            <div class="text">
+                                <h5>Email</h5>
+                                <p>contact@johndoe.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="icon"><i class="fas fa-phone"></i></div>
+                            <div class="text">
+                                <h5>Phone</h5>
+                                <p>+1 234 567 890</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links mt-4">
+                            <a href="#" class="me-3"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="me-3"><i class="fab fa-github"></i></a>
+                            <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-7" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input type="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Subject" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2023 My Portfolio. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>Designed by <a href="#" class="text-white">John Doe</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top" onclick="scrollToTop(); return false;"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Isotope -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html> 
